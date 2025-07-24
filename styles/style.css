@@ -175,6 +175,24 @@ header {
 }
 
 /*3 piece image part still undone*/
+.bd-0{
+    background-image: url(../assets/deal-bloom.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bd-1{
+    background-image: url(../assets/deal-ana.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bd-2{
+    background-image: url(../assets/deal-zabo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 /*email section*/
