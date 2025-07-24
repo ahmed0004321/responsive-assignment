@@ -97,5 +97,29 @@ header{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 30px;
+    margin-bottom: 210px;
 }
 
+
+/*trusted section*/
+.trusted{
+    margin-bottom: 126px;
+}
+.trusted h3{
+    font-size: 3.1rem;
+}
+.trusted ul li{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.image-container .fake{
+    width: 70%;
+    position: relative;
+    top: -530px;
+    left: 200px;
+    
+}
