@@ -182,6 +182,7 @@ header {
     background-image: url(../assets/news-letter-bg.png);
     background-repeat: no-repeat;
     padding: 180px 400px;
+    margin-bottom: 50px;
 }
 
 section form{
@@ -206,4 +207,40 @@ form input[type="submit"]{
     height: 44px;
     color: white;
     background-color: #E95A08;
+}
+
+
+/*footer styles*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.part-1{
+    display: flex;
+    flex-direction: column;
+}
+.part-1 img{
+    width: 135px;
+}
+.part-1 p{
+    width: 350px;
+    margin-top: 20px;
+}
+.part-2 li{
+    margin-bottom: 24px;
+}
+.part-3 {
+    display: flex;
+    flex-direction: column;
+}
+.part-3 li {
+    margin-bottom: 24px;
+}
+.part-4 ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
 }
