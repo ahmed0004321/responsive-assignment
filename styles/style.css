@@ -107,8 +107,18 @@ header {
 .daddy-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 30px;
+    gap: 22px;
     margin-bottom: 210px;
+}
+ 
+.cards h3{
+    font-size: 1.3rem;
+    margin-top: 30px;
+    font-weight: 300;
+}
+.cards p{
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 
@@ -175,25 +185,62 @@ header {
 }
 
 /*3 piece image part still undone*/
-.bd-0{
+.div1, .div2, .div3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flower-1{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.flower{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) 2fr;
+    align-items: center;
+    margin-bottom: 120px;
+    align-items: center;
+    gap: 15px;
+}
+.div1{
     background-image: url(../assets/deal-bloom.png);
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-}
-.bd-1{
-    background-image: url(../assets/deal-ana.png);
-    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.bd-2{
-    background-image: url(../assets/deal-zabo.png);
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 206px;
+    width: 386px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
 }
 
+.div2{
+    background-image: url(../assets/deal-ana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 206px;
+    width: 386px;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.div3{
+    background-image: url(../assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 753px;
+    height: 423px;
+    border-radius: 20px;
+    color: white;
+    font-size: 2.5rem;
+}
 
 /*email section*/
 .email{
@@ -261,4 +308,110 @@ footer{
     justify-content: space-between;
     gap: 20px;
     align-items: center;
+}
+
+
+/*for smaller device*/
+
+@media screen and (max-width: 576px){
+    nav ul .h, .s, .a{
+        display: none;
+    }
+    nav{
+        max-width: 361px;
+        margin: 0 auto;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        gap: 28px;
+    }
+
+    .banner div h3{
+        font-size: 1.5rem;
+        text-align: start;
+    }
+    .banner div p{
+        font-size: 1rem;
+        text-align: start;
+    }
+    .banner img{
+        margin-top: 0px;
+    }
+
+
+    .main h3, p{
+        max-width: 361px;
+        margin: 0 auto;
+    }
+
+    .daddy-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 361px;
+        margin: 0 auto;
+    }
+    .cards{
+        width: 171px;
+        height: 340px;
+        margin-bottom: 20px;
+    }
+    .cards .actions button{
+        width: 171px;
+    }
+
+
+    .trusted{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .trusted .image-container .fake{
+        display: none;
+    }
+    .trusted div h3{
+        font-size: 1.5rem;
+    }
+    .trusted .list-carry{
+        max-width: 355px;
+        margin: 0 auto;
+    }
+    .flower{
+        grid-template-columns: 1fr;
+        max-width: 361px;
+        margin: 0 auto;
+    }
+    .div1{
+        width: 361px;
+        height: 184px;
+        font-size: 1.3rem;
+    }
+    .div2{
+        width: 361px;
+        height: 184px;
+        font-size: 1.3rem;
+    }
+    .div3{
+        width: 361px;
+        height: 184px;
+        font-size: 1.3rem;
+    }
+
+
+    .email{
+        width: 393px;
+    }
+    .email h3{
+        font-size: 1.5rem;
+        width: 260px;
+    }
+
+
+    footer{
+        flex-direction: column;
+        max-width: 361px;
+        margin: 0 auto;
+    }
+    footer .part-4 ul{
+        justify-content: flex-start;
+    }
 }
