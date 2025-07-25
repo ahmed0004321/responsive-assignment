@@ -43,6 +43,11 @@ header {
 
 .banner div p {
     font-size: 1.3rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
 }
 
 .banner img {
@@ -65,6 +70,10 @@ header {
     font-size: 1.3rem;
     text-align: center;
     margin-bottom: 49px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 
@@ -215,8 +224,22 @@ header {
     border-radius: 20px;
     color: white;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
 }
-
+.div1, .div2, h3{
+    font-size: 1.5rem;
+}
+.div1, .div2, a{
+    font-size: 1rem;
+}
+.div3 h3{
+    font-size: 2.5rem;
+}
+.div3 a{
+    font-size: 1.8rem;
+}
+ 
 .div2{
     background-image: url(../assets/deal-ana.png);
     background-repeat: no-repeat;
@@ -228,6 +251,8 @@ header {
     overflow: hidden;
     color: white;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .div3{
@@ -240,15 +265,18 @@ header {
     border-radius: 20px;
     color: white;
     font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 /*email section*/
 .email{
     background-image: url(../assets/news-letter-bg.png);
     background-repeat: no-repeat;
-    padding: 180px 400px;
-    margin-bottom: 50px;
+    background-position: center;
+    background-size: cover;
 }
+
 
 section form{
     display: flex;
@@ -258,18 +286,15 @@ section form{
 .email h3{
     text-align: center;
     color: white;
-    font-size: 3.1rem;
-    margin-bottom: 23px;
+    font-size: 2.5rem;
 }
 form input[type="email"]{
-    width: 620px;
-    height: 44px;
+    max-width: 620px;
+    max-height: 44px;
     background-color: white;
-    padding-left: 20px;
 }
 form input[type="submit"]{
-    width: 186px;
-    height: 44px;
+   
     color: white;
     background-color: #E95A08;
 }
@@ -325,11 +350,18 @@ footer{
     .banner{
         flex-direction: column-reverse;
         gap: 28px;
+        margin-bottom: 50px;
+    }
+    .banner-div{
+        width: 361px;
+        height: 147px;
+        margin: 0 auto;
     }
 
     .banner div h3{
         font-size: 1.5rem;
         text-align: start;
+        width: 191px;
     }
     .banner div p{
         font-size: 1rem;
@@ -364,6 +396,8 @@ footer{
     .trusted{
         flex-direction: column;
         margin-top: 80px;
+        gap: 0px;
+
     }
     .trusted .image-container .fake{
         display: none;
@@ -375,34 +409,40 @@ footer{
         max-width: 355px;
         margin: 0 auto;
     }
+    .deals{
+        margin-bottom: 51px;
+    }
     .flower{
         grid-template-columns: 1fr;
         max-width: 361px;
         margin: 0 auto;
     }
-    .div1{
+    .flower .flower-1 .div1{
         width: 361px;
         height: 184px;
-        font-size: 1.3rem;
     }
-    .div2{
+    .flower .flower-1 .div2{
         width: 361px;
         height: 184px;
-        font-size: 1.3rem;
+        margin-top: 5px;
     }
-    .div3{
+    .flower .div3{
         width: 361px;
         height: 184px;
-        font-size: 1.3rem;
+    }
+    .div3 h3{
+        font-size: 1.5rem;
+    }
+    .div3 a{
+        font-size: 1rem;
     }
 
-
-    .email{
-        width: 393px;
-    }
     .email h3{
         font-size: 1.5rem;
-        width: 260px;
+    }
+    .email{
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
 
@@ -410,6 +450,7 @@ footer{
         flex-direction: column;
         max-width: 361px;
         margin: 0 auto;
+        margin-bottom: 30px;
     }
     footer .part-4 ul{
         justify-content: flex-start;
